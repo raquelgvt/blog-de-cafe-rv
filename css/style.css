@@ -73,8 +73,14 @@ img {
 }
 
 /* Header */
-.header {
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header {
     background-image: url(../img/banner.jpg);
+}
+
+.header {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -158,6 +164,10 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -248,4 +258,32 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -10rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+    height: 18rem;
+}
+
+.boton--derecha {
+    margin-left: auto;
 }
